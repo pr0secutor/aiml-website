@@ -14,7 +14,7 @@ const Home = () => {
         <Banner title='AIML CLUB DTU'/>
         <Flex flexDirection={'column'} mt={24}>
             <Heading size={['xl','2xl','3xl']} borderBottom={'solid'} borderBottomColor={'#EC3750'} borderBottomWidth={8} width={'fit-content'} ml={'auto'} mr={'auto'}>Things We Do</Heading>
-            <SimpleGrid minChildWidth={'360px'} spacingX={24} spacingY={4}>
+            <SimpleGrid minChildWidth={'360px'} spacingX={24} spacingY={4} mt={24}>
                 <ThingsCard 
                 icon={<IoMdGitNetwork/>} 
                 title='Networking' 
@@ -32,7 +32,7 @@ const Home = () => {
                 />
             </SimpleGrid>
         </Flex>
-        <VStack mt={24} alignItems={'center'} spacing={8}>
+        <VStack mt={24} alignItems={'center'} spacing={24}>
           <Heading size={['xl','2xl','3xl']} borderBottom={'solid'} borderBottomColor={'#EC3750'} borderBottomWidth={8} width={'fit-content'} ml={'auto'} mr={'auto'}>Our Initiatives</Heading>
           <InitiativesCard
           image_src='https://img.freepik.com/free-photo/3d-rendering-biorobots-concept_23-2149524383.jpg?w=1480&t=st=1678861817~exp=1678862417~hmac=bf0a7b4e4ee1b4e7b39304a78f792b3b096153e0f2cb82cf11837de82b31bcb1'
@@ -52,7 +52,7 @@ const Home = () => {
         </VStack>
         <Flex flexDirection={'column'} mt={24}>
           <Heading size={['xl','2xl','3xl']} borderBottom={'solid'} borderBottomColor={'#EC3750'} borderBottomWidth={8} width={'fit-content'} ml={'auto'} mr={'auto'}>Events</Heading>
-          <SimpleGrid minChildWidth={'360px'} spacingX={24} spacingY={4} mt={16}>
+          <SimpleGrid minChildWidth={'360px'} spacingX={24} spacingY={4} mt={24}>
           <EventCard
             image_src='./google io 21.png'
             title='Google IO 2023'
