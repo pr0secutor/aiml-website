@@ -6,7 +6,7 @@ import EventCard from '../../Components/EventCard'
 const Events = () => {
   return (
     <Flex flexDirection={'column'}>
-    <Banner title='MEMBERS'/>
+    <Banner title='EVENTS'/>
     <SimpleGrid minChildWidth={'360px'} spacingX={24} spacingY={4}>
         <EventCard
           image_src='./google io 21.png'
