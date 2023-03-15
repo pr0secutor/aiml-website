@@ -1,4 +1,4 @@
-import { Button, Card, CardBody, Heading, HStack, Image, Stack, Text, VStack } from '@chakra-ui/react'
+import { Button, Card, CardBody, Heading, Image, Stack, Text, VStack } from '@chakra-ui/react'
 import React from 'react'
 
 const InitiativesCard = ({image_src,title,description,link}) => {

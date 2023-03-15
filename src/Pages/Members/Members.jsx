@@ -7,7 +7,7 @@ const Members = () => {
   return (
     <Flex flexDirection={'column'}>
     <Banner title='MEMBERS'/>
-        <SimpleGrid minChildWidth={'360px'} spacingX={24} spacingY={4} mt={5}>
+        <SimpleGrid minChildWidth={'360px'} spacingX={24} spacingY={4} mt={24}>
             <MemberCard
               profile_pic='https://bit.ly/dan-abramov'
               name='Dan Abramov'

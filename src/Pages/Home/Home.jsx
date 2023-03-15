@@ -5,7 +5,7 @@ import {IoMdGitNetwork} from 'react-icons/io'
 import {AiFillFlag} from 'react-icons/ai'
 import {BiChip} from 'react-icons/bi'
 import ThingsCard from './ThingsCard'
-import InitiativesCard from './InitiativesCard'
+import InitiativesCard from '../../Components/InitiativesCard'
 import EventCard from '../../Components/EventCard'
 
 const Home = () => {
