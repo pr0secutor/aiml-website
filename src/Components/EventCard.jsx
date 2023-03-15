@@ -10,8 +10,8 @@ const EventCard = ({image_src,title,date,description,know_more_link}) => {
           <Heading color={'#EC3750'}>{title}</Heading>
           <Text color={'gray.400'}>{date}</Text>
           <Text>{description}</Text>
-          <Link href={know_more_link}>
-            <Text color={'gray.400'}>Know More →</Text>
+          <Link href={know_more_link} _hover={{textDecoration:'underline',textDecorationColor:'#EC3750'}}>
+            <Text color={'#EC3750'}>Know More →</Text>
           </Link>
         </VStack>
       </CardBody>
