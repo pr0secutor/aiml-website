@@ -1,4 +1,4 @@
-import { Button, Flex, Heading, SimpleGrid, Text, VStack } from '@chakra-ui/react'
+import { Button, Flex, SimpleGrid } from '@chakra-ui/react'
 import React from 'react'
 import Banner from '../../Components/Banner'
 import EventCard from '../../Components/EventCard'

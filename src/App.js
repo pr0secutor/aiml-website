@@ -5,6 +5,9 @@ import LatestNews from "./Pages/LatestNews";
 import Members from "./Pages/Members/Members";
 
 function App() {
+  window.onbeforeunload = function() {
+    window.scrollTo(0,0)
+  }
   return (
     <div className="App">
     <BrowserRouter>

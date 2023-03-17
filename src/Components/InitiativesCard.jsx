@@ -1,9 +1,10 @@
 import { Button, Card, CardBody, Heading, Image, Stack, Text, VStack } from '@chakra-ui/react'
+import { motion } from 'framer-motion'
 import React from 'react'
 
 const InitiativesCard = ({image_src,title,description,link}) => {
   return (
-    <Card boxShadow={'none'}>
+    <Card boxShadow={'none'} as={motion.div} initial={{opacity:0}} whileInView={{opacity:1,transition:{duration:0.8}}} viewport={{once:true}}>
       <CardBody>
         <Stack direction={{base:'column',lg:'row'}} spacing={24} alignItems={'center'}>
           <Image src={image_src} alt='' borderRadius={8} width={{base:'350px',md:'450px'}} height={{base:'350px',md:'450px'}}/>

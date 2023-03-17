@@ -7,12 +7,13 @@ import {BiChip} from 'react-icons/bi'
 import ThingsCard from './ThingsCard'
 import InitiativesCard from '../../Components/InitiativesCard'
 import EventCard from '../../Components/EventCard'
+import { motion } from 'framer-motion'
 
 const Home = () => {
   return (
     <Flex flexDirection={'column'}>
         <Banner title='AIML CLUB DTU'/>
-        <Flex flexDirection={'column'} mt={24}>
+        <Flex flexDirection={'column'} mt={24} as={motion.div} initial={{opacity:0}} whileInView={{opacity:1,transition:{duration:1}}} viewport={{once:true}}>
             <Heading size={['xl','2xl','3xl']} borderBottom={'solid'} borderBottomColor={'#EC3750'} borderBottomWidth={8} width={'fit-content'} ml={'auto'} mr={'auto'}>Things We Do</Heading>
             <SimpleGrid minChildWidth={'360px'} spacingX={24} spacingY={4} mt={24}>
                 <ThingsCard 
