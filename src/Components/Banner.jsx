@@ -28,7 +28,7 @@ const Banner = ({title}) => {
         initial={{opacity:0,y:60}}
         animate={{opacity:1,y:0,transition:{duration:0.2,delay:0.1}}}
         >
-            A non-profit network of college coding clubs and  makers around the world<br/>,for the students ,by the students.
+            A non-profit network of college coding clubs and  makers around the world,<br/>for the students ,by the students.
         </Text>
       </VStack>
     </Flex>

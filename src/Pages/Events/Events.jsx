@@ -1,46 +1,45 @@
-import { Button, Flex, SimpleGrid } from '@chakra-ui/react'
-import React from 'react'
-import Banner from '../../Components/Banner'
-import EventCard from '../../Components/EventCard'
+import { Button, Flex, SimpleGrid } from "@chakra-ui/react";
+import React from "react";
+import Banner from "../../Components/Banner";
+import EventCard from "../../Components/EventCard";
+import Events_Data from "../../Events_Data.json";
 
 const Events = () => {
+  // console.log(Events_Data)
   return (
-    <Flex flexDirection={'column'}>
-    <Banner title='EVENTS'/>
-    <SimpleGrid minChildWidth={'360px'} spacingX={24} spacingY={4} mt={24}>
-        <EventCard
-          image_src='./google io 21.png'
-          title='Google IO 2023'
-          date='September 1st Week'
-          description='Amet, viverra nec sed in massa nibh. Magna dapibus auctor velit, est, mattis urna. Malesuada amet nisi libero, urna tristique aliquam.'
-        />
-        <EventCard
-          image_src='./google io 21.png'
-          title='Google IO 2023'
-          date='September 1st Week'
-          description='Amet, viverra nec sed in massa nibh. Magna dapibus auctor velit, est, mattis urna. Malesuada amet nisi libero, urna tristique aliquam.'
-        /><EventCard
-          image_src='./google io 21.png'
-          title='Google IO 2023'
-          date='September 1st Week'
-          description='Amet, viverra nec sed in massa nibh. Magna dapibus auctor velit, est, mattis urna. Malesuada amet nisi libero, urna tristique aliquam.'
-        /><EventCard
-          image_src='./google io 21.png'
-          title='Google IO 2023'
-          date='September 1st Week'
-          description='Amet, viverra nec sed in massa nibh. Magna dapibus auctor velit, est, mattis urna. Malesuada amet nisi libero, urna tristique aliquam.'
-        /><EventCard
-          image_src='./google io 21.png'
-          title='Google IO 2023'
-          date='September 1st Week'
-          description='Amet, viverra nec sed in massa nibh. Magna dapibus auctor velit, est, mattis urna. Malesuada amet nisi libero, urna tristique aliquam.'
-        />
-    </SimpleGrid>
-    <Button as='a' href='' colorScheme={'red'} variant="outline" borderRadius={20} width={'120px'} ml={'auto'} mr={'auto'} mt={4} mb={4}>
-      View More
-    </Button>
+    <Flex flexDirection={"column"} mb={20}>
+      <Banner title="EVENTS" />
+      <SimpleGrid minChildWidth={"360px"} spacingX={24} spacingY={4} mt={24}>
+        {Events_Data.events.map((event, i) => {
+          return (
+            <EventCard
+              id={i}
+              image_src={event.image_src}
+              title={event.title}
+              date={event.date}
+              description={event.description}
+            />
+          );
+        })}
+      </SimpleGrid>
+      <Button
+        as="a"
+        href=""
+        color="#ec3750"
+        variant="outline"
+        borderColor="#ec3750"
+        borderWidth='2px'
+        borderRadius={20}
+        width={"120px"}
+        ml={"auto"}
+        mr={"auto"}
+        mt={4}
+        mb={4}
+      >
+        View More
+      </Button>
     </Flex>
-  )
-}
+  );
+};
 
-export default Events
+export default Events;

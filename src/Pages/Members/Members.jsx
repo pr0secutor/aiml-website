@@ -1,52 +1,34 @@
-import { Button, Flex, Heading, SimpleGrid, Text, VStack } from '@chakra-ui/react'
-import React from 'react'
-import Banner from '../../Components/Banner'
-import MemberCard from './MemberCard'
+import {
+  Button,
+  Flex,
+  Heading,
+  SimpleGrid,
+  Text,
+  VStack,
+} from "@chakra-ui/react";
+import React from "react";
+import Banner from "../../Components/Banner";
+import MemberCard from "./MemberCard";
+import Member_Data from "../../Member_Data.json";
 
 const Members = () => {
   return (
-    <Flex flexDirection={'column'}>
-    <Banner title='MEMBERS'/>
-        <SimpleGrid minChildWidth={'360px'} spacingX={24} spacingY={4} mt={24}>
+    <Flex flexDirection={"column"} mb={20}>
+      <Banner title="MEMBERS" />
+      <SimpleGrid minChildWidth={"360px"} spacingX={24} spacingY={4} mt={24}>
+        {Member_Data.members.map((member) => {
+          return (
             <MemberCard
-              profile_pic='https://bit.ly/dan-abramov'
-              name='Dan Abramov'
-              por='President'
-              date='2021-2022'
+              profile_pic={member.profile_pic}
+              name={member.name}
+              por={member.por}
+              date={member.date}
             />
-            <MemberCard
-              profile_pic='https://bit.ly/kent-c-dodds'
-              name='Kent C Dodds'
-              por='Secretary'
-              date='2021-2022'
-            />
-            <MemberCard
-              profile_pic='https://bit.ly/ryan-florence'
-              name='Ryan Florence'
-              por='Senior Head'
-              date='2021-2022'
-            />
-            <MemberCard
-              profile_pic='https://bit.ly/prosper-baba'
-              name='Prosper Baba'
-              por='Member'
-              date='2021-2022'
-            />
-            <MemberCard
-              profile_pic='https://bit.ly/code-beast'
-              name='Code Beasr'
-              por='Member'
-              date='2021-2022'
-            />
-            <MemberCard
-              profile_pic='https://bit.ly/sage-adebayo'
-              name='Sage Adebayo'
-              por='Member'
-              date='2021-2022'
-            />
-        </SimpleGrid>
+          );
+        })}
+      </SimpleGrid>
     </Flex>
-  )
-}
+  );
+};
 
-export default Members
+export default Members;

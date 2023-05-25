@@ -1,0 +1,52 @@
+{
+  "members": [
+    {
+      "profile_pic": "https//bit.ly/dan-abramov",
+      "name": "Dan Abramov",
+      "por": "President",
+      "date": "2021-2022"
+    },
+    {
+      "profile_pic": "https://bit.ly/kent-c-dodds",
+      "name": "Kent C Dodds",
+      "por": "Secretary",
+      "date": "2021-2022"
+    },
+    {
+      "profile_pic": "//bit.ly/dan-abramov",
+      "name": "Dan Abramov",
+      "por": "President",
+      "date": "2021-2022"
+    },
+    {
+      "profile_pic": "//bit.ly/dan-abramov",
+      "name": "Dan Abramov",
+      "por": "President",
+      "date": "2021-2022"
+    },
+    {
+      "profile_pic": "//bit.ly/dan-abramov",
+      "name": "Code Beasr",
+      "por": "President",
+      "date": "2021-2022"
+    },
+    {
+      "profile_pic": "https://bit.ly/prosper-baba",
+      "name": "Dan Abramov",
+      "por": "President",
+      "date": "2021-2022"
+    },
+    {
+      "profile_pic": "https://bit.ly/sage-adebayo",
+      "name": "Code Beasr",
+      "por": "President",
+      "date": "2021-2022"
+    },
+    {
+      "profile_pic": "//bit.ly/dan-abramov",
+      "name": "Dan Abramov",
+      "por": "President",
+      "date": "2021-2022"
+    }
+  ]
+}
