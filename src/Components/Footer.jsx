@@ -24,13 +24,13 @@ const Footer = () => {
     <Flex
       as="footer"
       p={{base:9,lg:14,xl:20}}
-      backgroundColor="#000249"
+      backgroundColor="hacker_blue"
       flexDir={isSmallScreen ? "column" : "row"}
       justifyContent="space-between"
       alignItems='center'
     >
       <VStack alignItems={isSmallScreen?'center':'flex-start'} mb={isSmallScreen? 16:0}>
-        <Heading size={{base:'sm',lg:"md"}} color="#EC3750">
+        <Heading size={{base:'sm',lg:"md"}} color='hacker_red'>
           AIML Club
         </Heading>
         <VStack alignItems={isSmallScreen?'center':'flex-start'}>
@@ -42,7 +42,7 @@ const Footer = () => {
         </VStack>
       </VStack>
       <VStack w={"350px"} alignItems={isSmallScreen?'center':'flex-start'} mb={isSmallScreen? 16:0}>
-        <Heading size={{base:'sm',lg:"md"}} color="#EC3750">
+        <Heading size={{base:'sm',lg:"md"}} color='hacker_red'>
           Address
         </Heading>
         <Text fontSize={{base:'md',lg:"lg"}} color="white" textAlign={isSmallScreen?'center':'none'}>
@@ -54,7 +54,7 @@ const Footer = () => {
         </Text>
       </VStack>
       <VStack justifyContent='space-evenly'>
-        <Heading size={{base:'sm',lg:"md"}} color="#EC3750" mb={6}>
+        <Heading size={{base:'sm',lg:"md"}} color='hacker_red' mb={6}>
           Socials
         </Heading>
         <Image height='110px' w='auto' src='https://stickerhuman.hackclub.com/flag.png'/>

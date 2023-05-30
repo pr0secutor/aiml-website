@@ -25,9 +25,9 @@ const Events = () => {
       <Button
         as="a"
         href=""
-        color="#ec3750"
+        color="hacker_red"
         variant="outline"
-        borderColor="#ec3750"
+        borderColor="hacker_red"
         borderWidth='2px'
         borderRadius={20}
         width={"120px"}

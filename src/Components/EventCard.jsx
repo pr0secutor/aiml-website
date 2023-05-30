@@ -22,17 +22,17 @@ const EventCard = ({ image_src, title, date, description, know_more_link }) => {
       <CardBody>
         <VStack spacing={5} alignItems={"flex-start"}>
           <Image src={image_src} w={'300px'} height='auto' alt="card-image" borderRadius={8} />
-          <Heading color={"#EC3750"}>{title}</Heading>
+          <Heading color={"hacker_red"}>{title}</Heading>
           <Text color={"gray.400"}>{date}</Text>
           <Text>{description}</Text>
           <Link
             href={know_more_link}
             _hover={{
               textDecoration: "underline",
-              textDecorationColor: "#EC3750",
+              textDecorationColor: "hacker_red",
             }}
           >
-            <Text color={"#EC3750"}>Know More →</Text>
+            <Text color={"hacker_red"}>Know More →</Text>
           </Link>
         </VStack>
       </CardBody>

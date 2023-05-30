@@ -30,7 +30,7 @@ const Home = () => {
         <Heading
           size={["xl", "2xl", "3xl"]}
           borderBottom={"solid"}
-          borderBottomColor={"#EC3750"}
+          borderBottomColor={"hacker_red"}
           borderBottomWidth={8}
           width={"fit-content"}
           ml={"auto"}
@@ -60,7 +60,7 @@ const Home = () => {
         <Heading
           size={["xl", "2xl", "3xl"]}
           borderBottom={"solid"}
-          borderBottomColor={"#EC3750"}
+          borderBottomColor={"hacker_red"}
           borderBottomWidth={8}
           width={"fit-content"}
           ml={"auto"}
@@ -88,7 +88,7 @@ const Home = () => {
         <Heading
           size={["xl", "2xl", "3xl"]}
           borderBottom={"solid"}
-          borderBottomColor={"#EC3750"}
+          borderBottomColor={"hacker_red"}
           borderBottomWidth={8}
           width={"fit-content"}
           ml={"auto"}
@@ -119,9 +119,9 @@ const Home = () => {
         <Button
           as="a"
           href=""
-          color="#ec3750"
+          color="hacker_red"
           variant="outline"
-          borderColor="#ec3750"
+          borderColor="hacker_red"
           borderWidth='2px'
           borderRadius={20}
           width={"160px"}
