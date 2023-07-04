@@ -27,21 +27,21 @@ const ThingsCard = ({ icon, title, description, read_more_link }) => {
             p={4}
             size="xl"
             color='white'
-            background='#EC3750'
+            background='hacker_red'
             _hover={{background:'#d43146'}}
             isRound='true'
             icon={icon}
           />
-          <Heading>{title}</Heading>
+          <Heading size='lg'>{title}</Heading>
           <Text textAlign={"center"}>{description}</Text>
           <Link
             href={read_more_link}
             _hover={{
               textDecoration: "underline",
-              textDecorationColor: "#EC3750",
+              textDecorationColor: "hacker_red",
             }}
           >
-            <Text color={"#EC3750"}>Know More →</Text>
+            <Text color="hacker_red">Know More →</Text>
           </Link>
         </VStack>
       </CardBody>
